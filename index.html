@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Portfolio</title>
+
+<style>
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --accent: #38bdf8;
+  --text: #f1f5f9;
+  --subtext: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+p {
+  color: var(--subtext);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  margin-top: 20px;
+  border-radius: 50px;
+  background: var(--accent);
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+/* About */
+.about {
+  text-align: center;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1>Hi, I'm <span>Your Name</span></h1>
+  <p>Frontend Developer | Designer | Problem Solver</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about container">
+  <h2>About Me</h2>
+  <p style="margin-top:20px;">
+    I'm a passionate web developer who builds clean, responsive, and user-focused digital experiences. 
+    I specialize in modern frontend development and love turning ideas into reality through code.
+  </p>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="container">
+  <h2 style="text-align:center;">Projects</h2>
+
+  <div class="projects">
+    <div class="project-card">
+      <h3>Project One</h3>
+      <p>A responsive landing page built with modern HTML and CSS focusing on clean UI.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project Two</h3>
+      <p>An interactive portfolio template designed for creatives and developers.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project Three</h3>
+      <p>A minimal dashboard layout showcasing structured UI and usability principles.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact container">
+  <h2>Contact</h2>
+  <p style="margin-top:20px;">
+    Let's work together. Reach out at 
+    <a href="mailto:your@email.com">your@email.com</a>
+  </p>
+</section>
+
+</body>
+</html>
